@@ -377,7 +377,7 @@ body::-webkit-scrollbar-thumb {
       width: 70rem; }
       @media only screen and (max-width: 560px) {
         .home-main-img {
-          height: 100vh;
+          height: 95vh;
           width: 100vw; } }
     @media only screen and (max-width: 560px) {
       .home-main {
@@ -410,7 +410,7 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         text-align: center;
         align-items: center;
-        margin-top: 55rem; } }
+        margin-top: 45rem; } }
     .home-cta_text {
       width: 80%;
       color: #F6F7EB;
