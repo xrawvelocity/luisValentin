@@ -41,7 +41,7 @@
       width: 70rem;
 
       @include respond(phone) {
-        height: 95vh;
+        height: 101vh;
         width: 100vw;
       }
     }
@@ -89,7 +89,7 @@
       width: 100%;
       text-align: center;
       align-items: center;
-      margin-top: 45rem;
+      margin-top: 40rem;
     }
 
     &_text {

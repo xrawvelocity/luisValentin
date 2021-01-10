@@ -90,7 +90,7 @@ main {
 
 a:link,
 a:visited {
-  color: #0d65f1; }
+  color: #4717F6; }
 
 a:focus,
 a:active {
@@ -354,7 +354,7 @@ body::-webkit-scrollbar-thumb {
   border-right: 2px solid #fff;
   z-index: 9000;
   left: 50%;
-  transform: translate(-50%) rotate(45deg);
+  transform: translate(-50%, 200%) rotate(45deg);
   -webkit-animation: fade_move_down 3s ease-in-out infinite;
   animation: fade_move_down 3s ease-in-out infinite; }
   @media only screen and (max-width: 560px) {
@@ -377,7 +377,8 @@ body::-webkit-scrollbar-thumb {
       width: 70rem; }
       @media only screen and (max-width: 560px) {
         .home-main-img {
-          height: 100vh; } }
+          height: 101vh;
+          width: 100vw; } }
     @media only screen and (max-width: 560px) {
       .home-main {
         font-weight: 800; } }
@@ -409,7 +410,7 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         text-align: center;
         align-items: center;
-        margin-top: 55rem; } }
+        margin-top: 40rem; } }
     .home-cta_text {
       width: 80%;
       color: #F6F7EB;
@@ -517,6 +518,10 @@ body::-webkit-scrollbar-thumb {
       width: 70rem;
       background-image: url(../images/luisValentinArms.jpg);
       background-size: cover; }
+      @media only screen and (max-width: 560px) {
+        .about-content-image {
+          width: 100vw;
+          height: 30rem; } }
 
 .reviews {
   background-color: #17102b;
