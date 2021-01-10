@@ -64,8 +64,24 @@
           color: #2d4577;
         }
       }
-    }
+    } 
+    &_twitter {
+      &,
+      &:link,
+      &:visited {
+        color: #1DA1F2;
+        margin-right: 5rem;
 
+        @include respond(phone) {
+          margin-right: 2rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: #0da2ff;
+        }
+      }
+    }
     &_instagram {
       &,
       &:link,

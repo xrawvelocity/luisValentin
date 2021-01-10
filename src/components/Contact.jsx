@@ -22,7 +22,7 @@ export default class Contact extends Component {
 
         <form
           class="contact-form"
-          action="#"
+          action="https://formspree.io/f/mdopylvv"
           method="POST"
         >
           <div class="contact-form-group">

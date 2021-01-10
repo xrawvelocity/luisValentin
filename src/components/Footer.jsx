@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 
@@ -8,7 +8,7 @@ export default class Footer extends Component {
             <footer className="footer">
                 <div className="footer-links">
                     <a
-                        href="https://www.facebook.com//"
+                        href="https://www.facebook.com/luis.valentin.106"
                         className="footer-links_facebook"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -23,9 +23,17 @@ export default class Footer extends Component {
                     >
                         <FontAwesomeIcon icon={faInstagram} />
                     </a>
+                    <a
+                        href="https://www.twitter.com/luismvalentin"
+                        className="footer-links_twitter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </a>
                 </div>
                 <div className="footer-contact">
-                    <p>Phone: (000) 000-0000</p>
+                    <p>Phone: (786) 717-2639</p>
                     <p>
                         Email:{" "}
                         <a href="mailto:luisvalentin39@yahoo.com">

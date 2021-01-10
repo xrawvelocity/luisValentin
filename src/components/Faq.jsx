@@ -13,23 +13,23 @@ export default class FAQ extends Component {
 
 const data = [
     {
-        title: "Question goes here",
+        title: "How much do you charge?",
         paragraph: "Answer goes here",
     },
     {
-        title: "Lorem ipsum dolor sit amet?",
+        title: "For how long do you offer your services?",
         paragraph: "Answer goes here",
     },
     {
-        title: "Lorem ipsum dolor sit amet, consectetur adipisicing?",
+        title: "What if I require your services somewhere outside of Miami, FL?",
         paragraph: "Answer goes here",
     },
     {
-        title: "Question?",
+        title: "Can you do Zoom meetings instead of in-person ones?",
         paragraph: "Answer goes here",
     },
     {
-        title: "Question goes here as well",
+        title: "Can you do services in Spanish too?",
         paragraph: "Answer goes here",
     },
 ];

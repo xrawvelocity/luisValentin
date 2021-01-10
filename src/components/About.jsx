@@ -9,11 +9,12 @@ export default class About extends Component {
                     <div className="about-content-image"></div>
 
                     <p className="about-content-text">
-                        My name is Luis Valentin and my dream is to deliver the word of God to those who need
-                        it, to spread love, and to build faith. I have been a
-                        pastor for over 6 years now and I feel more confident
-                        than ever when I'm preaching. To schedule an appointment
-                        reach out to me using the form below.
+                        My name is Luis Miguel Valentin and I'm a Youth Pastor
+                        based in Miami, Florida. I feel the calling to be a
+                        voice in our generation to preach the gospel of Jesus
+                        and to serve leaders in the best way that I can. If you
+                        want to request my services please fill out the form
+                        below and I will reply to you within 24 hours.
                     </p>
                 </div>
             </div>

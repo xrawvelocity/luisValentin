@@ -24,7 +24,7 @@
       color: $white;
       width: 50%;
       margin-left: 13rem;
-      line-height: 1.5;
+      line-height: 1.6;
 
       @include respond(phone) {
         width: 70%;
@@ -33,7 +33,7 @@
     }
 
     &-image {
-      height: 50rem;
+      height: 40rem;
       width: 70rem;
       background-image: url(../images/luisValentinArms.jpg);
       background-size: cover;
