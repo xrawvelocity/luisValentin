@@ -88,8 +88,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 4.5rem;
   padding-top: 10rem;
   color: $white;
   text-align: center;
+
+  @include respond(phone) {
+    font-size: 3.6rem;
+  }
 }
