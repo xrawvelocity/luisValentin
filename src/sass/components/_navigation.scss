@@ -7,7 +7,6 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  mix-blend-mode: exclusion;
   animation: moveInTop 1s ease 0.5s;
   animation-fill-mode: backwards;
 
@@ -33,17 +32,18 @@
     }
 
     @include respond(tab-port) {
-      height: 100px;
-      width: 300px;
+      height: auto;
+      width: auto;
+      padding-top: 40px;
     }
     @include respond(phone) {
-      height: 100px;
-      width: 250px;
+      height: auto;
+      width: auto;
     }
     @include respond(smallphone) {
-      height: 100px;
-      width: 225px;
-      padding-left: 2rem;
+      height: auto;
+      width: auto;
+      padding-left: 0rem;
     }
 
     &_image {
@@ -62,7 +62,7 @@
       font-size: 3rem;
 
       @include respond(tab-port) {
-        
+        padding-left: 20px;
       }
       @include respond(phone) {
         
@@ -133,7 +133,7 @@
         &:link,
         &:visited {
           text-decoration: none;
-          color: $white;
+          color: $black;
         
           font-size: 2.4rem;
 
@@ -204,7 +204,7 @@
     }
 
     & > * {
-      border-bottom: 4px solid $black;
+      border-bottom: 4px solid $white;
       margin-top: 1.5rem;
     }
 
@@ -220,7 +220,7 @@
 
     &-two {
       opacity: 1;
-      width: 80%;
+      width: 100%;
       align-self: flex-end;
 
       &_open {
@@ -255,7 +255,7 @@
       }
 
       & > * {
-        border-bottom: 4px solid $black;
+        border-bottom: 4px solid $white;
         margin-top: 1.5rem;
       }
     }

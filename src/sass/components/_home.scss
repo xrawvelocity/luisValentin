@@ -34,6 +34,10 @@
       background-size: cover;
       height: 70rem;
       width: 70rem;
+
+      @include respond(phone) {
+        height: 100vh;
+      }
     }
 
     @include respond(phone) {
@@ -76,12 +80,14 @@
     @include respond(phone) {
       position: absolute;
       z-index: 1000;
-      width: 60%;
-      margin-top: 30rem;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      margin-top: 10rem;
     }
 
     &_text {
-      width: 80%;
+      width: 100%;
       color: $white;
       font-size: 6rem;
       animation: moveInBottom 1s ease 0.5s;

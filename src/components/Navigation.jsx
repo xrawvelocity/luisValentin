@@ -22,24 +22,24 @@ export default class Navigation extends Component {
                     <h1 className="navigation-logo_text">Luis Valentin</h1>
                 </a>
                 <div className="navigation-links">
-                    <a
+                    {/* <a
                         href="#services"
                         className={`navigation-links_projects`}
                     >
                         Services
-                    </a>
+                    </a> */}
                     <a
                         href="#about"
                         className={`navigation-links_about`}
                     >
                         About
                     </a>
-                    <a
+                    {/* <a
                         href="#reviews"
                         className={`navigation-links_reviews`}
                     >
                         Reviews
-                    </a>
+                    </a> */}
                     <a
                         href="#contact"
                         className={`navigation-links_contact`}
@@ -97,7 +97,7 @@ export default class Navigation extends Component {
                             : "navigation-hamburger_active"
                     }
                 >
-                    <a
+                    {/* <a
                         onClick={() => {
                             this.setState({ active: false, close: true });
                         }}
@@ -105,7 +105,7 @@ export default class Navigation extends Component {
                         className="navigation-hamburger_projects"
                     >
                         Services
-                    </a>
+                    </a> */}
                     <a
                         onClick={() => {
                             this.setState({ active: false, close: true });
@@ -115,7 +115,7 @@ export default class Navigation extends Component {
                     >
                         About
                     </a>
-                    <a
+                    {/* <a
                         onClick={() => {
                             this.setState({ active: false, close: true });
                         }}
@@ -123,7 +123,7 @@ export default class Navigation extends Component {
                         className="navigation-hamburger_reviews"
                     >
                         Reviews
-                    </a>
+                    </a> */}
                     <a
                         onClick={() => {
                             this.setState({ active: false, close: true });

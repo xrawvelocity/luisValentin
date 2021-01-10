@@ -15,9 +15,9 @@ export default class App extends Component {
             <Fragment>
                 <Navigation />
                 <Home />
-                <Services />
+                {/* <Services /> */}
                 <About />
-                <Reviews />
+                {/* <Reviews /> */}
                 <Contact />
                 <FAQ />
                 <Footer />
