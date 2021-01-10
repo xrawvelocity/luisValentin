@@ -380,7 +380,7 @@ body::-webkit-scrollbar-thumb {
       width: 70rem; }
       @media only screen and (max-width: 560px) {
         .home-main-img {
-          height: 101vh;
+          height: 100vh;
           width: 100vw; } }
     @media only screen and (max-width: 560px) {
       .home-main {
