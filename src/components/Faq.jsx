@@ -14,23 +14,25 @@ export default class FAQ extends Component {
 const data = [
     {
         title: "How much do you charge?",
-        paragraph: "Answer goes here",
+        paragraph:
+            "Price can vary depending on the amount of people, the amount of days, and the location I would need to travel to.",
     },
     {
         title: "For how long do you offer your services?",
-        paragraph: "Answer goes here",
+        paragraph: "The timeframe of my services is based on you and how you want me to serve you best.",
     },
     {
-        title: "What if I require your services somewhere outside of Miami, FL?",
-        paragraph: "Answer goes here",
+        title:
+            "What if I require your services somewhere outside of Miami, FL?",
+        paragraph: "I am willing to travel anywhere, that would just affect the price a little bit.",
     },
     {
         title: "Can you do Zoom meetings instead of in-person ones?",
-        paragraph: "Answer goes here",
+        paragraph: "Yes, I can do Zoom meetings or any other platform to meet with you.",
     },
     {
         title: "Can you do services in Spanish too?",
-        paragraph: "Answer goes here",
+        paragraph: "Yes, I can also serve in Spanish.",
     },
 ];
 
