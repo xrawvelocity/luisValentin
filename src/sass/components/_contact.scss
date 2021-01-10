@@ -67,8 +67,9 @@
 
     @include respond(phone) {
       flex-direction: column;
-      margin: 15rem 0 0;
+      margin: 15rem 5rem 0;
       padding-bottom: 15rem;
+
     }
 
     &-group {

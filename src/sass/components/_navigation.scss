@@ -18,8 +18,9 @@
     padding: 1% 0;
     overflow: visible;
   }
-
+  
   &-logo {
+    text-shadow: 0 0 1rem #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,6 +207,7 @@
     & > * {
       border-bottom: 4px solid $white;
       margin-top: 1.5rem;
+      box-shadow: 0 0 1rem #000;
     }
 
     &-one {

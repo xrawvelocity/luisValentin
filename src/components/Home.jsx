@@ -8,7 +8,7 @@ export default class Home extends Component {
                     <div className="home-cta">
                         <div className="home-cta_text">Hello, I am a pastor</div>
                         <div className="home-cta_text">
-                            with over 5 years of experience based on Miami, FL
+                            with over 6 years of experience based on Miami, FL
                         </div>
                         <a href="#contact" className="home-cta_button">
                             Contact Me

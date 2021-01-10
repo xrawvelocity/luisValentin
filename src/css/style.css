@@ -145,6 +145,7 @@ body::-webkit-scrollbar-thumb {
       padding: 1% 0;
       overflow: visible; } }
   .navigation-logo, .footer-logo {
+    text-shadow: 0 0 1rem #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,7 +303,8 @@ body::-webkit-scrollbar-thumb {
         cursor: pointer; }
       .hamburger > * {
         border-bottom: 4px solid #F6F7EB;
-        margin-top: 1.5rem; }
+        margin-top: 1.5rem;
+        box-shadow: 0 0 1rem #000; }
       .hamburger-one {
         transform: rotate(0);
         transition: all 0.3s ease; }
@@ -404,7 +406,7 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         text-align: center;
         align-items: center;
-        margin-top: 10rem; } }
+        margin-top: 20rem; } }
     .home-cta_text {
       width: 100%;
       color: #F6F7EB;
@@ -493,11 +495,20 @@ body::-webkit-scrollbar-thumb {
   .about-content {
     display: flex;
     margin: 10rem 0; }
+    @media only screen and (max-width: 560px) {
+      .about-content {
+        flex-direction: column;
+        align-items: center; } }
     .about-content-text {
       font-size: 3.6rem;
       color: #F6F7EB;
       width: 50%;
-      margin-left: 13rem; }
+      margin-left: 13rem;
+      line-height: 1.5; }
+      @media only screen and (max-width: 560px) {
+        .about-content-text {
+          width: 70%;
+          margin: 5rem 0 0; } }
     .about-content-image {
       height: 50rem;
       width: 70rem;
@@ -577,7 +588,7 @@ body::-webkit-scrollbar-thumb {
     @media only screen and (max-width: 560px) {
       .contact-form {
         flex-direction: column;
-        margin: 15rem 0 0;
+        margin: 15rem 5rem 0;
         padding-bottom: 15rem; } }
     .contact-form-group {
       width: 100%;
