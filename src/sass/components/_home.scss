@@ -13,12 +13,13 @@
   border-right: 2px solid #fff;
   z-index: 9000;
   left: 50%;
-  transform: translate(-50%) rotate(45deg);
+  transform: translate(-50%, 200%) rotate(45deg);
   -webkit-animation: fade_move_down 3s ease-in-out infinite;
   animation: fade_move_down 3s ease-in-out infinite;
 
   @include respond(phone) {
     bottom: 0%;
+
   }
 }
 
@@ -41,6 +42,7 @@
 
       @include respond(phone) {
         height: 100vh;
+        width: 100vw;
       }
     }
 

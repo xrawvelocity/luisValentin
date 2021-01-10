@@ -37,6 +37,11 @@
       width: 70rem;
       background-image: url(../images/luisValentinArms.jpg);
       background-size: cover;
+
+      @include respond(phone) {
+        width: 100vw;
+        height: 30rem;
+      }
     }
   }
 }
