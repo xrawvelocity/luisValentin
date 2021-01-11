@@ -39,6 +39,8 @@
       background-size: cover;
       height: 70rem;
       width: 70rem;
+      animation: moveInRight 1s ease 0.5s;
+      animation-fill-mode: backwards;
 
       @include respond(phone) {
         height: 100vh;

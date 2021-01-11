@@ -124,7 +124,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 4.5rem;
   padding-top: 10rem;
   color: #F6F7EB;
-  text-align: center; }
+  text-align: center;
+  animation: fadeIn 1s ease 0.5s;
+  animation-fill-mode: backwards; }
   @media only screen and (max-width: 560px) {
     .title {
       font-size: 3.6rem; } }
@@ -377,7 +379,9 @@ body::-webkit-scrollbar-thumb {
       background-image: url(../images/luisValentinAnchor.jpg);
       background-size: cover;
       height: 70rem;
-      width: 70rem; }
+      width: 70rem;
+      animation: moveInRight 1s ease 0.5s;
+      animation-fill-mode: backwards; }
       @media only screen and (max-width: 560px) {
         .home-main-img {
           height: 100vh;
@@ -511,7 +515,9 @@ body::-webkit-scrollbar-thumb {
       color: #F6F7EB;
       width: 50%;
       margin-left: 13rem;
-      line-height: 1.6; }
+      line-height: 1.6;
+      animation: moveInRight 1s ease 0.5s;
+      animation-fill-mode: backwards; }
       @media only screen and (max-width: 560px) {
         .about-content-text {
           width: 70%;
@@ -520,7 +526,9 @@ body::-webkit-scrollbar-thumb {
       height: 40rem;
       width: 70rem;
       background-image: url(../images/luisValentinArms.jpg);
-      background-size: cover; }
+      background-size: cover;
+      animation: moveInLeft 1s ease 0.5s;
+      animation-fill-mode: backwards; }
       @media only screen and (max-width: 560px) {
         .about-content-image {
           width: 100vw;
@@ -785,7 +793,9 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(8, 6, 12, 0.9);
   padding: 3rem 0; }
   .footer-contact {
-    width: auto; }
+    width: auto;
+    animation: moveInBottom 1s ease 0.5s;
+    animation-fill-mode: backwards; }
     .footer-contact > *:not(:first-child) {
       margin-top: 1.5rem; }
   .footer a {
@@ -799,7 +809,9 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     width: 25%;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    animation: moveInBottom 1s ease 0.5s;
+    animation-fill-mode: backwards; }
     @media only screen and (max-width: 560px) {
       .footer-links {
         width: 40%; } }
@@ -816,7 +828,7 @@ body::-webkit-scrollbar-thumb {
         cursor: pointer;
         color: #2d4577; }
     .footer-links_twitter, .footer-links_twitter:link, .footer-links_twitter:visited {
-      color: #1DA1F2;
+      color: #1da1f2;
       margin-right: 5rem; }
       @media only screen and (max-width: 560px) {
         .footer-links_twitter, .footer-links_twitter:link, .footer-links_twitter:visited {

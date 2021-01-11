@@ -92,6 +92,8 @@ body::-webkit-scrollbar-thumb {
   padding-top: 10rem;
   color: $white;
   text-align: center;
+  animation: fadeIn 1s ease 0.5s;
+  animation-fill-mode: backwards;
 
   @include respond(phone) {
     font-size: 3.6rem;

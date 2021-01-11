@@ -1,47 +1,50 @@
 .about {
-  min-height: 70vh;
-  background-color: $lightblack;
-  padding: 0 10%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  @include respond(phone){
-
-  }
-
-  &-content {
+    min-height: 70vh;
+    background-color: $lightblack;
+    padding: 0 10%;
     display: flex;
-    margin: 10rem 0;
+    align-items: center;
+    flex-direction: column;
 
-    @include respond(phone){
-      flex-direction: column;
-      align-items: center;
+    @include respond(phone) {
     }
 
-    &-text {
-      font-size: 3.6rem;
-      color: $white;
-      width: 50%;
-      margin-left: 13rem;
-      line-height: 1.6;
+    &-content {
+        display: flex;
+        margin: 10rem 0;
 
-      @include respond(phone) {
-        width: 70%;
-        margin: 5rem 0 0;
-      }
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-text {
+            font-size: 3.6rem;
+            color: $white;
+            width: 50%;
+            margin-left: 13rem;
+            line-height: 1.6;
+            animation: moveInRight 1s ease 0.5s;
+            animation-fill-mode: backwards;
+
+            @include respond(phone) {
+                width: 70%;
+                margin: 5rem 0 0;
+            }
+        }
+
+        &-image {
+            height: 40rem;
+            width: 70rem;
+            background-image: url(../images/luisValentinArms.jpg);
+            background-size: cover;
+            animation: moveInLeft 1s ease 0.5s;
+            animation-fill-mode: backwards;
+
+            @include respond(phone) {
+                width: 100vw;
+                height: 30rem;
+            }
+        }
     }
-
-    &-image {
-      height: 40rem;
-      width: 70rem;
-      background-image: url(../images/luisValentinArms.jpg);
-      background-size: cover;
-
-      @include respond(phone) {
-        width: 100vw;
-        height: 30rem;
-      }
-    }
-  }
 }
