@@ -3,10 +3,11 @@
     flex-direction: column;
     animation: fadeIn 1s ease 0.75s;
     animation-fill-mode: backwards;
-    min-height: 63vh;
+    min-height: 80vh;
+    margin-top: 7rem;
 
     @include respond(phone) {
-        min-height: 72vh;
+        min-height: 80vh;
     }
 
     &-title {

@@ -309,7 +309,7 @@ body::-webkit-scrollbar-thumb {
       .hamburger > * {
         border-bottom: 4px solid #F6F7EB;
         margin-top: 1.5rem;
-        box-shadow: 0 0 1rem #000; }
+        box-shadow: 0 0 .5rem #000; }
       .hamburger-one {
         transform: rotate(0);
         transition: all 0.3s ease; }
@@ -371,21 +371,24 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column; }
   .home-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 95vh;
     margin-top: 3rem; }
     .home-main-img {
       background-image: url(../images/luisValentinAnchor.jpg);
       background-size: cover;
-      height: 70rem;
-      width: 70rem;
+      height: 60rem;
+      width: 60rem;
       animation: moveInRight 1s ease 0.5s;
-      animation-fill-mode: backwards; }
+      animation-fill-mode: backwards;
+      margin-left: 20rem; }
       @media only screen and (max-width: 560px) {
         .home-main-img {
           height: 100vh;
-          width: 100vw; } }
+          width: 100vw;
+          animation: none;
+          margin-left: 0; } }
     @media only screen and (max-width: 560px) {
       .home-main {
         font-weight: 800; } }
@@ -405,11 +408,11 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     font-size: 3rem;
     justify-content: center;
-    align-items: flex-end;
-    text-align: end;
+    align-items: center;
+    text-align: center;
     margin: 3rem 0 3rem;
     padding-left: 1rem;
-    width: 35%; }
+    width: 30%; }
     @media only screen and (max-width: 560px) {
       .home-cta {
         position: absolute;
@@ -429,7 +432,7 @@ body::-webkit-scrollbar-thumb {
         .home-cta_text {
           color: #F6F7EB; } }
     .home-cta_button {
-      margin: 5rem 0;
+      margin: 5rem 0 0;
       background-color: #4717F6;
       padding: 1rem 1.5rem;
       border-radius: 3px;
@@ -449,34 +452,6 @@ body::-webkit-scrollbar-thumb {
       .home-cta_button::before, .home-cta_button::after {
         clear: both;
         display: none; }
-  .home-image1 {
-    width: 55%;
-    height: 100%;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    background-position: center;
-    object-fit: cover;
-    animation: moveInRight 1s ease 0.75s;
-    animation-fill-mode: backwards; }
-    @media only screen and (max-width: 560px) {
-      .home-image1 {
-        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-        width: 100%;
-        filter: brightness(0.5);
-        object-position: 40% 0%; } }
-  .home-image2 {
-    width: 55%;
-    height: 100%;
-    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
-    background-position: right;
-    object-fit: cover;
-    animation: moveInLeft 1s ease 0.75s;
-    animation-fill-mode: backwards; }
-    @media only screen and (max-width: 560px) {
-      .home-image2 {
-        clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
-        width: 100%;
-        filter: brightness(0.5);
-        object-position: 70% 0%; } }
 
 .services {
   min-height: 70vh;
@@ -498,7 +473,7 @@ body::-webkit-scrollbar-thumb {
 
 .about {
   min-height: 70vh;
-  background-color: #17102b;
+  background-color: #0E0B16;
   padding: 0 10%;
   display: flex;
   align-items: center;
@@ -559,10 +534,11 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   animation: fadeIn 1s ease 0.75s;
   animation-fill-mode: backwards;
-  min-height: 63vh; }
+  min-height: 80vh;
+  margin-top: 7rem; }
   @media only screen and (max-width: 560px) {
     .contact {
-      min-height: 72vh; } }
+      min-height: 80vh; } }
   .contact-title {
     font-size: 3rem;
     margin-top: 0rem;
@@ -688,7 +664,7 @@ body::-webkit-scrollbar-thumb {
         cursor: pointer; }
 
 .faq {
-  background-color: #17102b;
+  background-color: #0E0B16;
   min-height: 50vh;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Home extends Component {
     render() {
@@ -7,12 +8,14 @@ export default class Home extends Component {
                 <section id="top" className="home-main">
                     <div className="home-cta">
                         <div className="home-cta_text">
-                            Pastor and speaker with over 6 years of experience
-                            based on Miami, FL
+                            Pastor {"&"} Speaker
                         </div>
-                        <a href="#contact" className="home-cta_button">
-                            Contact Me
-                        </a>
+                        <Link to="/contact" className="home-cta_button">
+                            Speaker Request
+                        </Link>
+                        <Link to="/contact" className="home-cta_button">
+                            Mentorship
+                        </Link>
                     </div>
                     <div className="home-main-img"></div>
                     <span class="scroll-indicator"></span>

@@ -7,21 +7,31 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
+import { Route, Switch } from "react-router-dom";
 
 export default class App extends Component {
-
     render() {
         return (
-            <Fragment>
-                <Navigation />
-                <Home />
-                {/* <Services /> */}
-                <About />
-                {/* <Reviews /> */}
-                <Contact />
-                <FAQ />
-                <Footer />
-            </Fragment>
+            <Switch>
+                <Fragment>
+                    <Navigation />
+                    <Route
+                        exact
+                        path="/"
+                        render={() => {
+                            return (
+                                <Fragment>
+                                    <Home />
+                                    <About />
+                                    <FAQ />
+                                </Fragment>
+                            );
+                        }}
+                    />
+                    <Route exact path="/contact" render={() => <Contact />} />
+                    <Footer />
+                </Fragment>
+            </Switch>
         );
     }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Navigation extends Component {
     state = {
@@ -16,38 +17,26 @@ export default class Navigation extends Component {
                             close: true,
                         });
                     }}
-                    href="#top"
+                    href="/#top"
                     className="navigation-logo"
                 >
                     <h1 className="navigation-logo_text">Luis Valentin</h1>
                 </a>
                 <div className="navigation-links">
-                    {/* <a
-                        href="#services"
-                        className={`navigation-links_projects`}
-                    >
-                        Services
-                    </a> */}
                     <a
-                        href="#about"
+                        href="/#about"
                         className={`navigation-links_about`}
                     >
                         About
                     </a>
-                    {/* <a
-                        href="#reviews"
-                        className={`navigation-links_reviews`}
-                    >
-                        Reviews
-                    </a> */}
-                    <a
-                        href="#contact"
+                    <Link
+                        to="/contact"
                         className={`navigation-links_contact`}
                     >
                         Contact
-                    </a>
+                    </Link>
                     <a
-                        href="#FAQ"
+                        href="/#FAQ"
                         className={`navigation-links_FAQ`}
                     >
                         FAQ
@@ -97,47 +86,29 @@ export default class Navigation extends Component {
                             : "navigation-hamburger_active"
                     }
                 >
-                    {/* <a
-                        onClick={() => {
-                            this.setState({ active: false, close: true });
-                        }}
-                        href="#services"
-                        className="navigation-hamburger_projects"
-                    >
-                        Services
-                    </a> */}
                     <a
                         onClick={() => {
                             this.setState({ active: false, close: true });
                         }}
-                        href="#about"
+                        href="/#about"
                         className="navigation-hamburger_about"
                     >
                         About
                     </a>
-                    {/* <a
+                    <Link
                         onClick={() => {
                             this.setState({ active: false, close: true });
                         }}
-                        href="#reviews"
-                        className="navigation-hamburger_reviews"
-                    >
-                        Reviews
-                    </a> */}
-                    <a
-                        onClick={() => {
-                            this.setState({ active: false, close: true });
-                        }}
-                        href="#contact"
+                        to="/contact"
                         className="navigation-hamburger_contact"
                     >
                         Contact
-                    </a>
+                    </Link>
                     <a
                         onClick={() => {
                             this.setState({ active: false, close: true });
                         }}
-                        href="#FAQ"
+                        href="/#FAQ"
                         className="navigation-hamburger_FAQ"
                     >
                         FAQ
