@@ -12,9 +12,7 @@ export default class About extends Component {
                         My name is Luis Miguel Valentin and I'm a Youth Pastor
                         based in Miami, Florida. I feel the calling to be a
                         voice in our generation to preach the gospel of Jesus
-                        and to serve leaders in the best way that I can. If you
-                        want to request my services please fill out the form
-                        below and I will reply to you within 24 hours.
+                        and to serve leaders in the best way that I can.
                     </p>
                 </div>
             </div>
