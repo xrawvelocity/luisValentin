@@ -21,7 +21,7 @@ export default class Navigation extends Component {
                     className="navigation-logo"
                 >
                     <img
-                        src="../images/luisValentinLogo.png"
+                        src="./images/luisValentinLogo.png"
                         alt="logo"
                         className="navigation-logo_image"
                     />
