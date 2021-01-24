@@ -1,265 +1,251 @@
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2% 10%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  animation: moveInTop 1s ease 0.5s;
-  animation-fill-mode: backwards;
-
-  overflow: hidden;
-
-  @include respond(phone) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
     position: fixed;
     top: 0;
-    padding: 1% 0;
-    overflow: visible;
-  }
-  
-  &-logo {
-    text-shadow: 0 0 1rem #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    
-    &,
-    &:link,
-    &:visited {
-      text-decoration: none;
-    }
+    width: 100%;
+    z-index: 1000;
+    animation: moveInTop 1s ease 0.5s;
+    animation-fill-mode: backwards;
 
-    @include respond(tab-port) {
-      height: auto;
-      width: auto;
-      // padding-top: 40px;
-    }
+    overflow: hidden;
+
     @include respond(phone) {
-      height: auto;
-      width: auto;
-    }
-    @include respond(smallphone) {
-      height: auto;
-      width: auto;
-      padding-left: 0rem;
-    }
-
-    // &_image {
-    //   transform: scale(0.5);
-    //   @include respond(phone) {
-    //     transform: scale(0.4);
-    //   }
-    //   @include respond(smallphone) {
-    //     transform: scale(.4);
-    //   }
-    // }
-
-    &_text {
-      
-      color: $white;
-      font-size: 3rem;
-
-      @include respond(tab-port) {
-        padding-left: 20px;
-      }
-      @include respond(phone) {
-        
-      }
-      @include respond(smallphone) {
-       
-      }
-    }
-  }
-
-  &-links {
-    display: flex;
-
-    @include respond(tab-port) {
-      //width < 1040px
-      display: none;
-    }
-
-    & > * {
-      &,
-      &:link,
-      &:visited {
-        text-decoration: none;
-        color: $white;
-      
-        margin-left: 3rem;
-        font-size: 2.4rem;
-
-        @include animBorder(500ms);
-      }
-    }
-
-    &_active {
-      &::after {
-        content: "";
-        position: relative;
-        display: block;
-        height: 3px;
-        width: 100%;
-        background-color: $white;
-        transform: scaleX(1) !important;
-        transform-origin: 0%;
-        top: 2px;
-      }
-    }
-  }
-
-  &-hamburger {
-    display: none;
-
-    &_active {
-      @include respond(tab-port) {
-        //width < 1040px
-        display: flex;
-        flex-direction: column;
-        background-color: $white;
-        padding: 1rem 2rem;
         position: fixed;
-        top: 80px;
-        right: 10px;
-        overflow: hidden;
-        animation: fadeIn 0.5s ease;
-        animation-fill-mode: both;
-      }
+        top: 0;
+        padding: 1% 0;
+        overflow: visible;
+    }
 
-      & > * {
+    &-logo {
+        
+        display: flex;
+        align-items: center;
+        object-fit: cover;
+        width: 100%;
+
         &,
         &:link,
         &:visited {
-          text-decoration: none;
-          color: $black;
-        
-          font-size: 2.4rem;
-
-          &:not(:last-child) {
-            margin-bottom: 2rem;
-          }
-
-          @include animBorder(500ms);
+            text-decoration: none;
         }
-      }
+        @include respond(phone) {
+            height: auto;
+            width: 50%;
+            display: inline-flex;
+        }
+
+        &_image {
+            transform: scale(0.7);
+
+            @include respond(phone) {
+                transform: scale(0.5) translateX(-25rem);
+            }
+            
+        }
+
+        &_text {
+            color: $white;
+            font-size: 3rem;
+
+            @include respond(tab-port) {
+                padding-left: 20px;
+            }
+            @include respond(phone) {
+            }
+            @include respond(smallphone) {
+            }
+        }
     }
 
-    &_close {
-      @include respond(tab-port) {
+    &-links {
         display: flex;
-        flex-direction: column;
-        background-color: $white;
-        padding: 1rem 2rem;
-        position: fixed;
-        top: 80px;
-        right: 10px;
-        overflow: hidden;
-        animation: fadeOut 0.5s ease;
-        animation-fill-mode: both;
+
+        @include respond(tab-port) {
+            //width < 1040px
+            display: none;
+        }
 
         & > * {
-          &,
-          &:link,
-          &:visited {
-            text-decoration: none;
-            color: $white;
-          
-            font-size: 2.4rem;
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: $white;
 
-            &:not(:last-child) {
-              margin-bottom: 2rem;
+                margin-left: 3rem;
+                font-size: 2.4rem;
+
+                @include animBorder(500ms);
+            }
+        }
+
+        &_active {
+            &::after {
+                content: "";
+                position: relative;
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: $white;
+                transform: scaleX(1) !important;
+                transform-origin: 0%;
+                top: 2px;
+            }
+        }
+    }
+
+    &-hamburger {
+        display: none;
+
+        &_active {
+            @include respond(tab-port) {
+                //width < 1040px
+                display: flex;
+                flex-direction: column;
+                background-color: $white;
+                padding: 1rem 2rem;
+                position: fixed;
+                top: 80px;
+                right: 10px;
+                overflow: hidden;
+                animation: fadeIn 0.5s ease;
+                animation-fill-mode: both;
             }
 
-            @include animBorder(500ms);
-          }
+            & > * {
+                &,
+                &:link,
+                &:visited {
+                    text-decoration: none;
+                    color: $black;
+
+                    font-size: 2.4rem;
+
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                    @include animBorder(500ms);
+                }
+            }
         }
-      }
+
+        &_close {
+            @include respond(tab-port) {
+                display: flex;
+                flex-direction: column;
+                background-color: $white;
+                padding: 1rem 2rem;
+                position: fixed;
+                top: 80px;
+                right: 10px;
+                overflow: hidden;
+                animation: fadeOut 0.5s ease;
+                animation-fill-mode: both;
+
+                & > * {
+                    &,
+                    &:link,
+                    &:visited {
+                        text-decoration: none;
+                        color: $white;
+
+                        font-size: 2.4rem;
+
+                        &:not(:last-child) {
+                            margin-bottom: 2rem;
+                        }
+
+                        @include animBorder(500ms);
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 .hamburger {
-  display: none;
+    display: none;
 
-  @include respond(tab-port) {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 50px;
-    transition: all 0.3s ease;
-
-    &::before,
-    &::after {
-      clear: both;
-      content: "";
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    & > * {
-      border-bottom: 4px solid $white;
-      margin-top: 1.5rem;
-      box-shadow: 0 0 .5rem #000;
-    }
-
-    &-one {
-      transform: rotate(0);
-      transition: all 0.3s ease;
-
-      &_open {
-        transition: all 0.3s ease;
-        transform: rotate(45deg) translateY(1.5rem) translateX(1rem);
-      }
-    }
-
-    &-two {
-      opacity: 1;
-      width: 100%;
-      align-self: flex-end;
-
-      &_open {
-        opacity: 0;
-      }
-    }
-
-    &-three {
-      transform: rotate(0);
-      transition: all 0.3s ease;
-
-      &_open {
-        transition: all 0.3s ease;
-        transform: rotate(-45deg) translateY(-2rem) translateX(1.5rem);
-      }
-    }
-  }
-
-  &_open {
     @include respond(tab-port) {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      width: 30px;
-      height: 50px;
-      transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 50px;
+        transition: all 0.3s ease;
 
-      &:hover {
-        cursor: pointer;
-      }
+        &::before,
+        &::after {
+            clear: both;
+            content: "";
+        }
 
-      & > * {
-        border-bottom: 4px solid $white;
-        margin-top: 1.5rem;
-      }
+        &:hover {
+            cursor: pointer;
+        }
+
+        & > * {
+            border-bottom: 4px solid $white;
+            margin-top: 1.5rem;
+            box-shadow: 0 0 0.5rem #000;
+        }
+
+        &-one {
+            transform: rotate(0);
+            transition: all 0.3s ease;
+
+            &_open {
+                transition: all 0.3s ease;
+                transform: rotate(45deg) translateY(1.5rem) translateX(1rem);
+            }
+        }
+
+        &-two {
+            opacity: 1;
+            width: 100%;
+            align-self: flex-end;
+
+            &_open {
+                opacity: 0;
+            }
+        }
+
+        &-three {
+            transform: rotate(0);
+            transition: all 0.3s ease;
+
+            &_open {
+                transition: all 0.3s ease;
+                transform: rotate(-45deg) translateY(-2rem) translateX(1.5rem);
+            }
+        }
     }
-  }
+
+    &_open {
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            width: 30px;
+            height: 50px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            & > * {
+                border-bottom: 4px solid $white;
+                margin-top: 1.5rem;
+            }
+        }
+    }
 }
