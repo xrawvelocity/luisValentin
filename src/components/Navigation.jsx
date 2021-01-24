@@ -20,25 +20,20 @@ export default class Navigation extends Component {
                     href="/#top"
                     className="navigation-logo"
                 >
-                    <h1 className="navigation-logo_text">Luis Valentin</h1>
+                    <img
+                        src="../images/luisValentinLogo.png"
+                        alt="logo"
+                        className="navigation-logo_image"
+                    />
                 </a>
                 <div className="navigation-links">
-                    <a
-                        href="/#about"
-                        className={`navigation-links_about`}
-                    >
+                    <a href="/#about" className={`navigation-links_about`}>
                         About
                     </a>
-                    <Link
-                        to="/contact"
-                        className={`navigation-links_contact`}
-                    >
+                    <Link to="/contact" className={`navigation-links_contact`}>
                         Contact
                     </Link>
-                    <a
-                        href="/#FAQ"
-                        className={`navigation-links_FAQ`}
-                    >
+                    <a href="/#FAQ" className={`navigation-links_FAQ`}>
                         FAQ
                     </a>
                 </div>
