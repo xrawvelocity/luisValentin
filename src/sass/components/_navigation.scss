@@ -35,7 +35,7 @@
     @include respond(tab-port) {
       height: auto;
       width: auto;
-      padding-top: 40px;
+      // padding-top: 40px;
     }
     @include respond(phone) {
       height: auto;
@@ -47,15 +47,15 @@
       padding-left: 0rem;
     }
 
-    &_image {
-      transform: scale(0.5);
-      @include respond(phone) {
-        transform: scale(0.4);
-      }
-      @include respond(smallphone) {
-        transform: scale(.4);
-      }
-    }
+    // &_image {
+    //   transform: scale(0.5);
+    //   @include respond(phone) {
+    //     transform: scale(0.4);
+    //   }
+    //   @include respond(smallphone) {
+    //     transform: scale(.4);
+    //   }
+    // }
 
     &_text {
       

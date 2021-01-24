@@ -160,8 +160,7 @@ body::-webkit-scrollbar-thumb {
     @media only screen and (max-width: 65em) {
       .navigation-logo, .footer-logo {
         height: auto;
-        width: auto;
-        padding-top: 40px; } }
+        width: auto; } }
     @media only screen and (max-width: 560px) {
       .navigation-logo, .footer-logo {
         height: auto;
@@ -171,14 +170,6 @@ body::-webkit-scrollbar-thumb {
         height: auto;
         width: auto;
         padding-left: 0rem; } }
-    .navigation-logo_image {
-      transform: scale(0.5); }
-      @media only screen and (max-width: 560px) {
-        .navigation-logo_image {
-          transform: scale(0.4); } }
-      @media only screen and (max-width: 400px) {
-        .navigation-logo_image {
-          transform: scale(0.4); } }
     .navigation-logo_text {
       color: #F6F7EB;
       font-size: 3rem; }
