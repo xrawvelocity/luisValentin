@@ -39,8 +39,9 @@
 
         &_image {
             transform: scale(0.7);
-
+            
             @include respond(phone) {
+                background-color: rgba(0,0,0,0.5);
                 transform: scale(0.5) translateX(-25rem);
             }
             
