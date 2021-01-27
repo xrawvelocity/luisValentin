@@ -9,10 +9,12 @@ export default class About extends Component {
                     <div className="about-content-image"></div>
 
                     <p className="about-content-text">
-                        My name is Luis Miguel Valentin and I'm a Youth Pastor
-                        based in Miami, Florida. I feel the calling to be a
-                        voice in our generation to preach the gospel of Jesus
-                        and to serve leaders in the best way that I can.
+                        My name is Luis Miguel Valentin and I'm a youth pastor
+                        down in Miami, Florida. My vision to serve this
+                        generation is to fill, build, and release. My goal is to
+                        help you become the best leader you can be in every
+                        aspect of your character as a leader and your ministry
+                        as a whole. Hope to connect with you soon.
                     </p>
                 </div>
             </div>
