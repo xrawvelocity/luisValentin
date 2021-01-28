@@ -13,26 +13,26 @@ export default class FAQ extends Component {
 
 const data = [
     {
-        title: "How much do you charge?",
+        title: "How much is the cost of the mentorship program or to have you as a guest preacher?",
         paragraph:
             "Price can vary depending on the amount of people, the amount of days, and the location I would need to travel to.",
     },
     {
-        title: "For how long do you offer your services?",
-        paragraph: "The timeframe of my services is based on you and how you want me to serve you best.",
+        title: "How long do you offer the mentorship program for?",
+        paragraph: "The timeframes of the mentorship program is based on you and the goals you want to achieve. Before starting a timeframe will be discussed and a contract will be made.",
     },
     {
         title:
-            "What if I require your services somewhere outside of Miami, FL?",
-        paragraph: "I am willing to travel anywhere, that would just affect the price a little bit.",
+            "Is your service available outside of Miami, FL?",
+        paragraph: "Yes, services are available outside of Miami, FL. An additional charge may be required.",
     },
     {
-        title: "Can you do Zoom meetings instead of in-person ones?",
-        paragraph: "Yes, I can do Zoom meetings or any other platform to meet with you.",
+        title: "Are services provided virtually?",
+        paragraph: "Yes, services are provided virtually through Zoom or any other virtual platform agreed to use.",
     },
     {
-        title: "Can you do services in Spanish too?",
-        paragraph: "Yes, I can also serve in Spanish.",
+        title: "Besides English, are the services available in another language?",
+        paragraph: "Yes, besides English the services are available in Spanish as well.",
     },
 ];
 
